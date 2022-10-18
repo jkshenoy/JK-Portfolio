@@ -1,9 +1,9 @@
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@300;400;700&display=swap');
 
 :root {
-  --primary-color: #a78bfa;
-  --primary-hover-color: #8b5cf6;
-  --secondary-hover-color: #ede9fe;
+  --primary-color: #121e27;
+  --secondary-color: #f97316;
+  --primary-hover-color: #ea580c;
   --dark-grey: #4b5563;
   --light-grey: #f3f4f6;
 }
@@ -27,12 +27,17 @@ hr {
 }
 
 p {
-  font-size: 1.1rem;
+  font-size: 1.2rem;
 }
 
 .mark {
-  color: var(--primary-color);
+  color: var(--secondary-color);
+  text-decoration: underline;
 }
+
+/* .mark-fifteen {
+  writing-mode: vertical-rl;
+} */
 
 .link {
   box-sizing: border-box;
@@ -67,7 +72,7 @@ p {
 }
 
 .link-secondary:hover {
-  background-color: var(--secondary-hover-color);
+  background-color: var(--primary-hover-color);
 }
 
 article p {
@@ -91,9 +96,9 @@ article p {
 
 .navigation {
   background-color: var(--primary-color);
-  color: white;
+  color: var(--secondary-color);
   padding: 1.5rem 0rem;
-  border-bottom-left-radius: 1rem;
+  border-bottom-right-radius: 1rem;
 }
 
 .navigation .nav-brand {
@@ -113,8 +118,9 @@ article p {
 }
 
 .navigation .link {
-  color: white;
+  color: var(--secondary-color);
   font-size: 1.2rem;
+  text-decoration: dashed;
 }
 
 .navigation .link-active {
@@ -141,7 +147,7 @@ article p {
 }
 
 .header .header-heading .heading-inverted {
-  color: var(--primary-color);
+  color: var(--secondary-color);
 }
 
 .section {
@@ -199,17 +205,21 @@ article p {
 
 .fa-github {
   background-color: var(--primary-color);
-  color: white;
+  color: var(--secondary-color);
 }
 
 .fa-twitter {
   background-color: var(--primary-color);
-  color: white;
+  color: var(--secondary-color);
 }
 
 .fa-linkedin {
   background-color: var(--primary-color);
-  color: white;
+  color: var(--secondary-color);
+}
+.fa-free-code-camp {
+  background-color: var(--primary-color);
+  color: var(--secondary-color);
 }
 
 .showcase-list {
@@ -219,15 +229,6 @@ article p {
 .showcase-blog {
   padding-bottom: 4rem;
 }
-
-.nutrition-blog-img {
-  width: 400px;
-  max-width: 100%;
-  height: auto;
-  float: right;
-  margin: 0px 0px 20px 20px;
-}
-
 @media (max-width: 900px) {
   body {
     width: 100%;
@@ -240,5 +241,8 @@ article p {
 
   .container-center {
     width: auto;
+  }
+  .invisible-scrollbar::-webkit-scrollbar {
+    display: none;
   }
 }
