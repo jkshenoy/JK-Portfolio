@@ -2,10 +2,10 @@
 
 :root {
   --primary-color: #121e27;
-  --secondary-color: #f97316;
-  --primary-hover-color: #ea580c;
+  --accent-color: #f97316;
+  --hover-color: #ea580c;
   --dark-grey: #4b5563;
-  --light-grey: #f3f4f6;
+  --off-white: #f3f4f6;
 }
 
 body {
@@ -23,7 +23,7 @@ hr {
 
 .container-center {
   margin: auto;
-  max-width: 600px;
+  max-width: 800px;
 }
 
 p {
@@ -31,7 +31,7 @@ p {
 }
 
 .mark {
-  color: var(--secondary-color);
+  color: var(--accent-color);
   text-decoration: underline;
 }
 
@@ -50,14 +50,14 @@ p {
   width: max-content;
   padding: 0.6rem 1.2rem;
   background-color: var(--primary-color);
-  color: white;
+  color: var(--off-white);
   margin: 1rem 1rem 1rem 0rem;
   border-radius: 0.5rem;
   font-size: 1.3rem;
 }
 
 .link-primary:hover {
-  background-color: var(--primary-hover-color);
+  background-color: var(--hover-color);
 }
 
 .link-secondary {
@@ -72,7 +72,7 @@ p {
 }
 
 .link-secondary:hover {
-  background-color: var(--primary-hover-color);
+  background-color: var(--hover-color);
 }
 
 article p {
@@ -84,7 +84,11 @@ article p {
   text-align: center;
 }
 
-.list-non-bullet {
+/* .list-non-bullet {
+  list-style: none;
+  padding-inline-start: 0px;
+} */
+.list-style-none {
   list-style: none;
   padding-inline-start: 0px;
 }
@@ -96,7 +100,7 @@ article p {
 
 .navigation {
   background-color: var(--primary-color);
-  color: var(--secondary-color);
+  color: var(--accent-color);
   padding: 1.5rem 0rem;
   border-bottom-right-radius: 1rem;
 }
@@ -109,7 +113,7 @@ article p {
 
 .nav-brand a {
   text-decoration: none;
-  color: white;
+  color: var(--off-white);
 }
 
 .navigation .nav-pills {
@@ -118,7 +122,7 @@ article p {
 }
 
 .navigation .link {
-  color: var(--secondary-color);
+  color: var(--accent-color);
   font-size: 1.2rem;
   text-decoration: dashed;
 }
@@ -147,7 +151,7 @@ article p {
 }
 
 .header .header-heading .heading-inverted {
-  color: var(--secondary-color);
+  color: var(--accent-color);
 }
 
 .section {
@@ -156,7 +160,7 @@ article p {
 }
 
 .section-off-white {
-  background-color: var(--light-grey);
+  background-color: var(--off-white);
 }
 
 .other-projects {
@@ -170,7 +174,7 @@ article p {
   background-color: var(--primary-color);
   text-align: center;
   padding: 2rem 1rem;
-  color: white;
+  color: var(--off-white);
   border-top-right-radius: 1rem;
 }
 
@@ -180,7 +184,7 @@ article p {
 }
 
 .footer .link {
-  color: white;
+  color: var(--off-white);
   font-size: 1.1rem;
 }
 
@@ -196,7 +200,7 @@ article p {
   text-decoration: none;
   border-radius: 0.5rem;
   margin: 0rem 0.2rem;
-  border: solid 1px white;
+  border: solid 1px var(--off-white);
 }
 
 .fa:hover {
@@ -205,21 +209,17 @@ article p {
 
 .fa-github {
   background-color: var(--primary-color);
-  color: var(--secondary-color);
+  color: var(--accent-color);
 }
 
 .fa-twitter {
   background-color: var(--primary-color);
-  color: var(--secondary-color);
+  color: var(--accent-color);
 }
 
 .fa-linkedin {
   background-color: var(--primary-color);
-  color: var(--secondary-color);
-}
-.fa-free-code-camp {
-  background-color: var(--primary-color);
-  color: var(--secondary-color);
+  color: var(--accent-color);
 }
 
 .showcase-list {
@@ -241,8 +241,5 @@ article p {
 
   .container-center {
     width: auto;
-  }
-  .invisible-scrollbar::-webkit-scrollbar {
-    display: none;
   }
 }
